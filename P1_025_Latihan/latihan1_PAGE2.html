@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD EQUIPMENT</title>
+    <!-- Menggunakan Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #98FB98; /* Warna hijau matcha */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ADD EQUIPMENT</h1>
+        <a href="latihan1_PAGE1.html">SURFBOARD STOCK</a>
+        <span>&nbsp;</span>
+        <a href="latihan1_PAGE2.html">ADD EQUIPMENT</a>
+        <span>&nbsp;</span>
+        <a href="latihan1_PAGE3.html">SURFING AREA</a>
+        <form>
+            <div class="form-group">
+                <label for="nama">Equipment Name:</label>
+                <input type="text" class="form-control" id="nama">
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="text" class="form-control" id="amount">
+            </div>
+            <div class="form-group">
+                <label>Equipment Type:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sfm" id="sb" value="surfboard">
+                    <label class="form-check-label" for="surfboard">SurfBoard</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sfm" id="sm" value="swimsuit">
+                    <label class="form-check-label" for="swimsuit">Swim Suit</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="replacement">Stock Replacement in the Store:</label>
+                <select class="form-control" id="replacement">
+                    <option value="store">Store 1 -Bali</option>
+                    <option value="stores">Store 2 -Malang</option>
+                    <option value="storez">Store 3 -Jakarta</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="shipping">Shipping:</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="shp" value="Express">
+                    <label class="form-check-label" for="shp">Express</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="shpr" value="Regular">
+                    <label class="form-check-label" for="shpr">Regular</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+    </div>
+</body>
+</html>
